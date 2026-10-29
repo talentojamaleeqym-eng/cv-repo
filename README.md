@@ -4,7 +4,7 @@ A responsive, animated personal CV website for **Jamalee Qym Talento**, an Infor
 
 ## Technologies Used
 - HTML5, CSS3, vanilla JavaScript (no build step)
-- Google Fonts (Bricolage Grotesque, Instrument Sans)
+- Google Fonts (Inter Tight)
 - Deployed on Vercel
 
 ## Student Name

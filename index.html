@@ -8,11 +8,12 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☁️</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<div id="loader" aria-hidden="true"><span></span></div>
+<div id="loader" aria-hidden="true"><b id="pct">0</b><span></span></div>
+<div id="prog"></div><div class="cur" id="cur"></div><div class="cur dot" id="dot"></div>
 
 <header class="nav" id="nav">
   <a href="#home" class="brand">JQT</a>
@@ -24,11 +25,11 @@
 </header>
 
 <main>
-<section class="hero" id="home">
+<section class="hero dark" id="home">
   <div class="wrap hero-grid">
     <div>
       <p class="status"><span class="dot"></span>Open to work-from-home roles</p>
-      <h1>Jamalee Qym Talento</h1>
+      <h1 id="name" aria-label="Jamalee Qym Talento">Jamalee Qym Talento</h1>
       <p class="title">Information Technology Student &amp; Azure Administrator Associate</p>
       <p class="lead">I deploy, secure and troubleshoot cloud resources, and I keep the records behind them accurate. I'm looking for an entry-level Azure Administrator, Cloud Support or IT Support role.</p>
       <div class="actions">
@@ -41,6 +42,16 @@
       <pre id="term" aria-live="off"></pre>
     </aside>
   </div>
+</section>
+
+<section class="stats dark" aria-label="Highlights">
+  <div class="wrap stat-grid">
+    <div class="stat"><b data-n="2">0</b><span>Microsoft certifications</span></div>
+    <div class="stat"><b data-n="5">0</b><span>AZ-104 domains practiced</span></div>
+    <div class="stat"><b data-n="45">0</b><span>Words per minute</span></div>
+    <div class="stat"><b data-n="98" data-s="%">0</b><span>Typing accuracy</span></div>
+  </div>
+  <div class="marq" aria-hidden="true"><div><span>Virtual machines</span><span>Virtual networks</span><span>Entra ID</span><span>RBAC</span><span>Storage accounts</span><span>Azure Files</span><span>NSGs</span><span>Azure Policy</span><span>Azure analytics</span><span>Workbook automation</span><span>Virtual machines</span><span>Virtual networks</span><span>Entra ID</span><span>RBAC</span><span>Storage accounts</span><span>Azure Files</span><span>NSGs</span><span>Azure Policy</span><span>Azure analytics</span><span>Workbook automation</span></div></div>
 </section>
 
 <section id="about" class="sec">
@@ -78,7 +89,7 @@
   </div>
 </section>
 
-<section id="skills" class="sec">
+<section id="skills" class="sec dark">
   <div class="wrap">
     <h2>Skills</h2>
     <div class="skill-cols">
@@ -108,7 +119,7 @@
   </div>
 </section>
 
-<section id="projects" class="sec alt">
+<section id="projects" class="sec">
   <div class="wrap">
     <h2>Projects</h2>
     <p class="muted">Hands-on Azure labs from a student subscription, organized by the five AZ-104 exam domains. Repository links are coming soon.</p>
@@ -142,15 +153,15 @@
       </article>
       <article class="card" data-c="monitor" tabindex="0">
         <h3>Monitor and maintain</h3>
-        <p>Reviewed resource health and metrics with Azure Monitor.</p>
-        <p class="more">Set up alerts and backups to keep resources recoverable.</p>
-        <ul class="chips"><li>Azure Monitor</li><li>Alerts</li><li>Backup</li></ul>
+        <p>Tried workbook automation and Azure analytics to monitor the performance of a lab web app.</p>
+        <p class="more">Used the results to see how the app behaved and where it could be improved.</p>
+        <ul class="chips"><li>Workbook automation</li><li>Azure analytics</li><li>Performance monitoring</li></ul>
       </article>
     </div>
   </div>
 </section>
 
-<section id="certs" class="sec">
+<section id="certs" class="sec dark">
   <div class="wrap">
     <h2>Certifications</h2>
     <div class="certs">
@@ -175,7 +186,7 @@
   </div>
 </section>
 
-<section id="contact" class="sec">
+<section id="contact" class="sec dark">
   <div class="wrap">
     <h2>Let's connect</h2>
     <p>Available for full-time, work-from-home roles. Open to pre-employment assessments and online skills evaluations.</p>

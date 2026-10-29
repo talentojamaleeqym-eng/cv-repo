@@ -177,3 +177,12 @@ dialog#lab::backdrop{background:#000b;backdrop-filter:blur(8px)}
 .x:hover{transform:rotate(90deg);color:var(--amber)}
 @media(max-width:860px){.term{transform:none!important}.tiles{grid-template-columns:1fr}.stat-grid.three{grid-template-columns:1fr 1fr}#labBody{padding:28px 22px}.ghost{display:none}}
 @media(prefers-reduced-motion:reduce){.ico *{stroke-dashoffset:0}.card{animation:none}}
+/* official icons + tools */
+.card .ico{width:60px;height:60px;filter:drop-shadow(0 6px 10px #00000030);transition:transform .5s var(--ease),filter .4s}
+.card:hover .ico{transform:translateY(-6px) scale(1.12) rotate(-3deg);filter:drop-shadow(0 14px 16px #ffb40055)}
+.tools{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.tools li{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--ln);background:var(--card);padding:7px 14px;border-radius:99px;font-size:.88rem;transition:border-color .25s,transform .25s}
+.tools li:hover{border-color:var(--amber);transform:translateY(-3px)}
+.tools img{width:20px;height:20px}
+#labBody .tools li{animation:rise .5s var(--ease) backwards}
+.tiles{grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}

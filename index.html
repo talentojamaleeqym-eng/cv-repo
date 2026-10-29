@@ -50,7 +50,7 @@
     <div class="stat"><b data-n="5">0</b><span>AZ-104 domains practiced</span></div>
     <div class="stat"><b data-n="1">0</b><span>Lab web app monitored</span></div>
   </div>
-  <div class="marq" aria-hidden="true"><div><span>Virtual machines</span><span>Virtual networks</span><span>Entra ID</span><span>RBAC</span><span>Storage accounts</span><span>Azure Files</span><span>NSGs</span><span>Azure Policy</span><span>Azure analytics</span><span>Workbook automation</span><span>Virtual machines</span><span>Virtual networks</span><span>Entra ID</span><span>RBAC</span><span>Storage accounts</span><span>Azure Files</span><span>NSGs</span><span>Azure Policy</span><span>Azure analytics</span><span>Workbook automation</span></div></div>
+  <div class="marq" aria-hidden="true"><div><span>Virtual machines</span><span>Virtual networks</span><span>Entra ID</span><span>RBAC</span><span>Storage accounts</span><span>Azure Files</span><span>NSGs</span><span>Azure Policy</span><span>Azure analytics</span><span>Workbook automation</span><span>PowerShell</span><span>Bash</span><span>Hyper-V</span><span>Windows Server 2016</span><span>Windows Server 2025</span><span>Virtual machines</span><span>Virtual networks</span><span>Entra ID</span><span>RBAC</span><span>Storage accounts</span><span>Azure Files</span><span>NSGs</span><span>Azure Policy</span><span>Azure analytics</span><span>Workbook automation</span><span>PowerShell</span><span>Bash</span><span>Hyper-V</span><span>Windows Server 2016</span><span>Windows Server 2025</span></div></div>
 </section>
 
 <section id="about" class="sec">
@@ -102,6 +102,11 @@
         <div class="bar-skill" data-v="75"><span>Azure Policy, tags, resource groups</span><i></i></div>
       </div>
       <div class="reveal">
+        <h3>Scripting and systems</h3>
+        <ul class="chips">
+          <li>PowerShell scripting</li><li>Bash</li><li>Hyper-V virtualization</li>
+          <li>Windows Server 2016</li><li>Windows Server 2025</li>
+        </ul>
         <h3>IT and productivity</h3>
         <ul class="chips">
           <li>Data entry and validation</li><li>Documentation</li><li>File management</li>
@@ -127,49 +132,49 @@
     </div>
     <div class="cards" id="cards">
       <article class="card" data-c="identity" style="--k:0" tabindex="0" role="button" aria-label="Open Identity and governance case study">
-        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2L21 8V16L12 22L3 16V8Z"/><circle cx="12" cy="10" r="2.5"/><path d="M7.5 17c1-3.2 8-3.2 9 0"/></svg>
-        <span class="tag">Domain 1 · 20–25% of exam</span>
+        <img class="ico" src="assets/icons/identity.svg" alt="" width="56" height="56">
+        <span class="tag">Domain 1 of 5</span>
         <h3>Identity and governance</h3>
         <p>Controlling who can access what in Azure, and keeping resources organized.</p>
-        <ul class="chips"><li>Entra ID</li><li>RBAC</li><li>Azure Policy</li><li>Tags</li></ul>
+        <ul class="chips"><li>Azure portal</li><li>Microsoft Entra admin center</li><li>Users</li><li>Groups</li></ul>
         <span class="go">Read the case study →</span>
-        <template><h3>Identity and governance</h3><p class="kick">Domain 1 of 5 · 20–25% of the AZ-104 exam</p><h4>Objective</h4><p>Control access to Azure resources with least privilege, and keep a lab subscription organized and compliant.</p><h4>What I did</h4><ol><li>Created users and groups in Microsoft Entra ID.</li><li>Assigned built-in RBAC roles at resource group scope, so people only get the access their task needs.</li><li>Organized resources into resource groups and applied tags for ownership and cost tracking.</li><li>Applied Azure Policy to check that resources follow the rules set for the subscription.</li></ol><h4>By the numbers</h4><div class="tiles"><div><b>20–25%</b><span>Weight of this domain on the AZ-104 exam</span></div><div><b>4</b><span>RBAC scope levels: management group, subscription, resource group, resource</span></div><div><b>1</b><span>Azure student subscription used</span></div></div><ul class="chips"><li>Entra ID</li><li>RBAC</li><li>Azure Policy</li><li>Tags</li></ul></template>
+        <template><h3>Identity and governance</h3><p class="kick">Domain 1 of 5</p><h4>Objective</h4><p>Control access to Azure resources with least privilege, and keep a lab subscription organized and compliant.</p><h4>What I did</h4><ol><li>Created users and groups in Microsoft Entra ID.</li><li>Assigned built-in RBAC roles at resource group scope, so people only get the access their task needs.</li><li>Organized resources into resource groups and applied tags for ownership and cost tracking.</li><li>Applied Azure Policy to check that resources follow the rules set for the subscription.</li></ol><h4>Tools used</h4><ul class="tools"><li>Azure portal</li><li><img src="assets/icons/identity.svg" alt="" width="20" height="20">Microsoft Entra admin center</li><li><img src="assets/icons/users.svg" alt="" width="20" height="20">Users</li><li><img src="assets/icons/groups.svg" alt="" width="20" height="20">Groups</li><li><img src="assets/icons/policy.svg" alt="" width="20" height="20">Azure Policy</li><li><img src="assets/icons/rg.svg" alt="" width="20" height="20">Resource groups</li><li>Azure PowerShell</li></ul><h4>By the numbers</h4><div class="tiles"><div><b>4</b><span>RBAC scope levels: management group, subscription, resource group, resource</span></div><div><b>1</b><span>Azure student subscription used</span></div></div></template>
       </article>
       <article class="card" data-c="storage" style="--k:1" tabindex="0" role="button" aria-label="Open Storage case study">
-        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="5" rx="1"/><rect x="4" y="10" width="16" height="5" rx="1"/><rect x="4" y="17" width="16" height="4" rx="1"/><path d="M7 5.5h.01M7 12.5h.01M7 19h.01"/></svg>
-        <span class="tag">Domain 2 · 15–20% of exam</span>
+        <img class="ico" src="assets/icons/storage.svg" alt="" width="56" height="56">
+        <span class="tag">Domain 2 of 5</span>
         <h3>Storage</h3>
         <p>Creating storage accounts and file shares that other people can reach.</p>
-        <ul class="chips"><li>Storage accounts</li><li>Azure Files</li></ul>
+        <ul class="chips"><li>Azure portal</li><li>Storage accounts</li><li>Azure Files</li><li>Azure Storage Explorer</li></ul>
         <span class="go">Read the case study →</span>
-        <template><h3>Storage</h3><p class="kick">Domain 2 of 5 · 15–20% of the AZ-104 exam</p><h4>Objective</h4><p>Provision storage and share files from Azure the way an administrator would.</p><h4>What I did</h4><ol><li>Created a storage account and chose its performance and redundancy settings.</li><li>Created an Azure Files share for shared access to files.</li><li>Controlled access to the storage account.</li><li>Wrote down each step so another admin can repeat the setup.</li></ol><h4>By the numbers</h4><div class="tiles"><div><b>15–20%</b><span>Weight of this domain on the AZ-104 exam</span></div><div><b>5 TiB</b><span>Default size limit of a file share (up to 100 TiB with large file shares)</span></div><div><b>1</b><span>Azure student subscription used</span></div></div><ul class="chips"><li>Storage accounts</li><li>Azure Files</li></ul></template>
+        <template><h3>Storage</h3><p class="kick">Domain 2 of 5</p><h4>Objective</h4><p>Provision storage and share files from Azure the way an administrator would.</p><h4>What I did</h4><ol><li>Created a storage account and chose its performance and redundancy settings.</li><li>Created an Azure Files share for shared access to files.</li><li>Controlled access to the storage account.</li><li>Wrote down each step so another admin can repeat the setup.</li></ol><h4>Tools used</h4><ul class="tools"><li>Azure portal</li><li><img src="assets/icons/storage.svg" alt="" width="20" height="20">Storage accounts</li><li><img src="assets/icons/fileshares.svg" alt="" width="20" height="20">Azure Files</li><li>Azure Storage Explorer</li><li>Azure CLI</li><li>Azure PowerShell</li></ul><h4>By the numbers</h4><div class="tiles"><div><b>5 TiB</b><span>Default size limit of a file share (up to 100 TiB with large file shares)</span></div><div><b>1</b><span>Azure student subscription used</span></div></div></template>
       </article>
       <article class="card" data-c="compute" style="--k:2" tabindex="0" role="button" aria-label="Open Compute case study">
-        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4"/><path d="M7 10l2 2-2 2M12 14h4"/></svg>
-        <span class="tag">Domain 3 · 20–25% of exam</span>
+        <img class="ico" src="assets/icons/compute.svg" alt="" width="56" height="56">
+        <span class="tag">Domain 3 of 5</span>
         <h3>Compute</h3>
         <p>Deploying virtual machines and fixing them when something breaks.</p>
-        <ul class="chips"><li>Azure VMs</li><li>Resource groups</li><li>Troubleshooting</li></ul>
+        <ul class="chips"><li>Azure portal</li><li>Azure Cloud Shell</li><li>Azure CLI</li><li>Azure PowerShell</li></ul>
         <span class="go">Read the case study →</span>
-        <template><h3>Compute</h3><p class="kick">Domain 3 of 5 · 20–25% of the AZ-104 exam</p><h4>Objective</h4><p>Deploy Azure virtual machines and learn to troubleshoot them when deployment or access fails.</p><h4>What I did</h4><ol><li>Deployed virtual machines into resource groups from the Azure portal.</li><li>Chose the VM size, image and network placement.</li><li>Troubleshot failed deployments and connection problems.</li><li>Applied tags and policy to the machines for governance.</li></ol><h4>By the numbers</h4><div class="tiles"><div><b>20–25%</b><span>Weight of this domain on the AZ-104 exam</span></div><div><b>99.9%</b><span>Azure SLA for a single VM with Premium SSD</span></div><div><b>1</b><span>Azure student subscription used</span></div></div><ul class="chips"><li>Azure VMs</li><li>Resource groups</li><li>Troubleshooting</li></ul></template>
+        <template><h3>Compute</h3><p class="kick">Domain 3 of 5</p><h4>Objective</h4><p>Deploy Azure virtual machines and learn to troubleshoot them when deployment or access fails.</p><h4>What I did</h4><ol><li>Deployed virtual machines into resource groups from the Azure portal.</li><li>Chose the VM size, image and network placement.</li><li>Troubleshot failed deployments and connection problems.</li><li>Applied tags and policy to the machines for governance.</li></ol><h4>Tools used</h4><ul class="tools"><li>Azure portal</li><li>Azure Cloud Shell</li><li>Azure CLI</li><li>Azure PowerShell</li><li>Bash</li><li>RDP and SSH</li><li>Hyper-V</li><li>Windows Server 2016 and 2025</li></ul><h4>By the numbers</h4><div class="tiles"><div><b>99.9%</b><span>Azure SLA for a single VM with Premium SSD</span></div><div><b>1</b><span>Azure student subscription used</span></div></div></template>
       </article>
       <article class="card" data-c="network" style="--k:3" tabindex="0" role="button" aria-label="Open Virtual networking case study">
-        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7L3 12l5 5M16 7l5 5-5 5"/><circle cx="12" cy="12" r="1.8"/><path d="M10.2 12H8M15.8 12h-2"/></svg>
-        <span class="tag">Domain 4 · 15–20% of exam</span>
+        <img class="ico" src="assets/icons/network.svg" alt="" width="56" height="56">
+        <span class="tag">Domain 4 of 5</span>
         <h3>Virtual networking</h3>
         <p>Building networks and deciding which traffic is allowed in and out.</p>
-        <ul class="chips"><li>VNet</li><li>Subnets</li><li>NSG</li></ul>
+        <ul class="chips"><li>Azure portal</li><li>Virtual networks</li><li>Network security groups</li><li>Azure Network Watcher</li></ul>
         <span class="go">Read the case study →</span>
-        <template><h3>Virtual networking</h3><p class="kick">Domain 4 of 5 · 15–20% of the AZ-104 exam</p><h4>Objective</h4><p>Build a private network in Azure and restrict traffic to only what is needed.</p><h4>What I did</h4><ol><li>Created a virtual network and split it into subnets.</li><li>Created network security groups and attached them to subnets.</li><li>Wrote inbound and outbound rules and tested what traffic was allowed or blocked.</li><li>Fixed connectivity problems by checking rule order and effective rules.</li></ol><h4>By the numbers</h4><div class="tiles"><div><b>15–20%</b><span>Weight of this domain on the AZ-104 exam</span></div><div><b>100–4096</b><span>Priority range for custom NSG rules</span></div><div><b>1</b><span>Azure student subscription used</span></div></div><ul class="chips"><li>VNet</li><li>Subnets</li><li>NSG</li></ul></template>
+        <template><h3>Virtual networking</h3><p class="kick">Domain 4 of 5</p><h4>Objective</h4><p>Build a private network in Azure and restrict traffic to only what is needed.</p><h4>What I did</h4><ol><li>Created a virtual network and split it into subnets.</li><li>Created network security groups and attached them to subnets.</li><li>Wrote inbound and outbound rules and tested what traffic was allowed or blocked.</li><li>Fixed connectivity problems by checking rule order and effective rules.</li></ol><h4>Tools used</h4><ul class="tools"><li>Azure portal</li><li><img src="assets/icons/network.svg" alt="" width="20" height="20">Virtual networks</li><li><img src="assets/icons/nsg.svg" alt="" width="20" height="20">Network security groups</li><li>Azure Network Watcher</li><li>Azure CLI</li><li>Azure PowerShell</li></ul><h4>By the numbers</h4><div class="tiles"><div><b>100–4096</b><span>Priority range for custom NSG rules</span></div><div><b>1</b><span>Azure student subscription used</span></div></div></template>
       </article>
       <article class="card" data-c="monitor" style="--k:4" tabindex="0" role="button" aria-label="Open Monitor and maintain case study">
-        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><rect x="4" y="12" width="3.5" height="9"/><rect x="10.2" y="6" width="3.5" height="15"/><rect x="16.5" y="9" width="3.5" height="12"/><path d="M4 8l5-4 5 3 6-5"/></svg>
-        <span class="tag">Domain 5 · 10–15% of exam</span>
+        <img class="ico" src="assets/icons/monitor.svg" alt="" width="56" height="56">
+        <span class="tag">Domain 5 of 5</span>
         <h3>Monitor and maintain</h3>
         <p>Watching how a running app performs so problems show up early.</p>
-        <ul class="chips"><li>Workbook automation</li><li>Azure analytics</li><li>Performance monitoring</li></ul>
+        <ul class="chips"><li>Azure Monitor</li><li>Log Analytics</li><li>Azure analytics</li><li>Workbook automation</li></ul>
         <span class="go">Read the case study →</span>
-        <template><h3>Monitor and maintain</h3><p class="kick">Domain 5 of 5 · 10–15% of the AZ-104 exam</p><h4>Objective</h4><p>Use automation and Azure analytics to monitor the performance of a lab web app.</p><h4>What I did</h4><ol><li>Tried workbook automation to collect and present monitoring data.</li><li>Used Azure analytics to look at the performance of a lab web app.</li><li>Read the results to see how the app behaved and where it could improve.</li></ol><h4>By the numbers</h4><div class="tiles"><div><b>10–15%</b><span>Weight of this domain on the AZ-104 exam</span></div><div><b>1</b><span>Lab web app monitored</span></div><div><b>1</b><span>Azure student subscription used</span></div></div><ul class="chips"><li>Workbook automation</li><li>Azure analytics</li><li>Performance monitoring</li></ul></template>
+        <template><h3>Monitor and maintain</h3><p class="kick">Domain 5 of 5</p><h4>Objective</h4><p>Use automation and Azure analytics to monitor the performance of a lab web app.</p><h4>What I did</h4><ol><li>Tried workbook automation to collect and present monitoring data.</li><li>Used Azure analytics to look at the performance of a lab web app.</li><li>Read the results to see how the app behaved and where it could improve.</li></ol><h4>Tools used</h4><ul class="tools"><li><img src="assets/icons/azmonitor.svg" alt="" width="20" height="20">Azure Monitor</li><li><img src="assets/icons/monitor.svg" alt="" width="20" height="20">Log Analytics</li><li>Azure analytics</li><li><img src="assets/icons/automation.svg" alt="" width="20" height="20">Workbook automation</li><li>Azure portal</li></ul><h4>By the numbers</h4><div class="tiles"><div><b>1</b><span>Lab web app monitored</span></div><div><b>1</b><span>Azure student subscription used</span></div></div></template>
       </article>
     </div>
   </div>

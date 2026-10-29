@@ -13,6 +13,9 @@ Jamalee Qym Talento — BSIT, Davao del Norte State College
 ## Live Vercel Link
 https://YOUR-PROJECT.vercel.app  <!-- replace after deploying -->
 
+## GitHub Repository
+https://github.com/talentojamaleeqym-eng/cv-repo
+
 ## Structure
 ```
 index.html      page content

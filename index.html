@@ -19,7 +19,7 @@
   <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><i></i><i></i></button>
   <nav id="menu">
     <a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a>
-    <a href="#projects">Projects</a><a href="#certs">Certifications</a><a href="#contact">Contact</a>
+    <a href="#projects">Projects</a><a href="#certs">Certifications</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
   </nav>
 </header>
 
@@ -111,35 +111,40 @@
 <section id="projects" class="sec alt">
   <div class="wrap">
     <h2>Projects</h2>
-    <p class="muted">Hands-on labs completed in an Azure student subscription. Repository links are coming soon.</p>
+    <p class="muted">Hands-on Azure labs from a student subscription, organized by the five AZ-104 exam domains. Repository links are coming soon.</p>
     <div class="filters" id="filters">
-      <button class="on" data-f="all">All</button><button data-f="compute">Compute</button>
-      <button data-f="network">Network</button><button data-f="identity">Identity</button>
+      <button class="on" data-f="all">All</button><button data-f="identity">Identity</button><button data-f="storage">Storage</button><button data-f="compute">Compute</button><button data-f="network">Network</button><button data-f="monitor">Monitor</button>
     </div>
     <div class="cards" id="cards">
+      <article class="card" data-c="identity" tabindex="0">
+        <h3>Identity and governance</h3>
+        <p>Managed users, groups and roles with Microsoft Entra ID and RBAC.</p>
+        <p class="more">Applied Azure Policy, resource tags and resource groups to keep the environment organized and compliant.</p>
+        <ul class="chips"><li>Entra ID</li><li>RBAC</li><li>Azure Policy</li><li>Tags</li></ul>
+      </article>
+      <article class="card" data-c="storage" tabindex="0">
+        <h3>Storage</h3>
+        <p>Configured storage accounts and Azure Files shares.</p>
+        <p class="more">Documented the setup steps so another admin can repeat them.</p>
+        <ul class="chips"><li>Storage accounts</li><li>Azure Files</li></ul>
+      </article>
       <article class="card" data-c="compute" tabindex="0">
-        <h3>Virtual machine deployment</h3>
+        <h3>Compute</h3>
         <p>Deployed and troubleshot Azure virtual machines inside resource groups.</p>
-        <p class="more">Applied resource tags and Azure Policy to keep the environment organized and compliant.</p>
-        <ul class="chips"><li>Azure VMs</li><li>Azure Policy</li><li>Tags</li></ul>
+        <p class="more">Checked VM status and fixed deployment issues.</p>
+        <ul class="chips"><li>Azure VMs</li><li>Resource groups</li></ul>
       </article>
       <article class="card" data-c="network" tabindex="0">
-        <h3>Secure virtual network</h3>
+        <h3>Virtual networking</h3>
         <p>Built virtual networks and subnets and restricted traffic with network security groups.</p>
         <p class="more">Tested inbound and outbound rules and fixed connectivity problems.</p>
         <ul class="chips"><li>VNet</li><li>Subnets</li><li>NSG</li></ul>
       </article>
-      <article class="card" data-c="identity" tabindex="0">
-        <h3>Access control with Entra ID</h3>
-        <p>Managed users and assigned roles with Microsoft Entra ID and RBAC.</p>
-        <p class="more">Applied least-privilege role assignments at resource group scope.</p>
-        <ul class="chips"><li>Entra ID</li><li>RBAC</li></ul>
-      </article>
-      <article class="card" data-c="compute" tabindex="0">
-        <h3>Storage and file shares</h3>
-        <p>Configured storage accounts and Azure Files shares.</p>
-        <p class="more">Documented the setup steps so another admin can repeat them.</p>
-        <ul class="chips"><li>Storage accounts</li><li>Azure Files</li></ul>
+      <article class="card" data-c="monitor" tabindex="0">
+        <h3>Monitor and maintain</h3>
+        <p>Reviewed resource health and metrics with Azure Monitor.</p>
+        <p class="more">Set up alerts and backups to keep resources recoverable.</p>
+        <ul class="chips"><li>Azure Monitor</li><li>Alerts</li><li>Backup</li></ul>
       </article>
     </div>
   </div>
@@ -158,7 +163,15 @@
 <section id="experience" class="sec alt">
   <div class="wrap">
     <h2>Experience</h2>
-    <p class="reveal">I'm building my experience through academic and technical projects: Azure labs on a student subscription, plus database and office-productivity coursework. I'm open to internships, OJT and entry-level roles.</p>
+    <article class="job reveal">
+      <div class="job-head"><h3>Legal Transcriptionist</h3><span class="when">Since September 2026</span></div>
+      <p class="muted">Transcribe Me · Work from home</p>
+      <ul>
+        <li>Transcribe legal audio recordings into accurate, well-formatted documents.</li>
+        <li>Keep client material confidential and meet turnaround deadlines.</li>
+        <li>Apply fast, accurate typing (45 WPM at 98% accuracy) and careful proofreading.</li>
+      </ul>
+    </article>
   </div>
 </section>
 

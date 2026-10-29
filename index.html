@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jamalee Qym Talento | Aspiring Azure Administrator</title>
+<meta name="description" content="Personal CV of Jamalee Qym Talento, IT student certified in Azure Administrator Associate (AZ-104) and Azure Fundamentals (AZ-900).">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☁️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="loader" aria-hidden="true"><span></span></div>
+
+<header class="nav" id="nav">
+  <a href="#home" class="brand">JQT</a>
+  <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><i></i><i></i></button>
+  <nav id="menu">
+    <a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a>
+    <a href="#projects">Projects</a><a href="#certs">Certifications</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="status"><span class="dot"></span>Open to work-from-home roles</p>
+      <h1>Jamalee Qym Talento</h1>
+      <p class="title">Information Technology Student &amp; Azure Administrator Associate</p>
+      <p class="lead">I deploy, secure and troubleshoot cloud resources, and I keep the records behind them accurate. I'm looking for an entry-level Azure Administrator, Cloud Support or IT Support role.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">View my labs</a>
+        <a class="btn" href="Resume.pdf" download>Download resume</a>
+      </div>
+    </div>
+    <aside class="term" aria-label="Azure CLI demo">
+      <div class="bar"><i></i><i></i><i></i><b>azure cloud shell</b></div>
+      <pre id="term" aria-live="off"></pre>
+    </aside>
+  </div>
+</section>
+
+<section id="about" class="sec">
+  <div class="wrap two">
+    <figure class="photo">
+      <img src="assets/profile.jpg" alt="Portrait of Jamalee Qym Talento" onerror="this.remove()">
+      <span class="initials">JQT</span>
+    </figure>
+    <div>
+      <h2>About me</h2>
+      <p>I'm a Bachelor of Science in Information Technology student with hands-on Azure practice from student-subscription labs. I pay close attention to detail, document what I build, and learn new systems quickly.</p>
+      <p><strong>Career objective:</strong> to start my career as an Azure Administrator, Cloud Support or IT Support specialist and grow into cloud infrastructure and security.</p>
+      <dl class="facts">
+        <div><dt>Location</dt><dd>Davao del Norte, Philippines</dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:jqtalento04@gmail.com">jqtalento04@gmail.com</a></dd></div>
+        <div><dt>Interests</dt><dd>Cloud administration, network security, identity and access</dd></div>
+        <div><dt>Languages</dt><dd>English and Filipino (Tagalog), fluent</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="sec alt">
+  <div class="wrap">
+    <h2>Education</h2>
+    <div class="edu reveal">
+      <h3>Bachelor of Science in Information Technology</h3>
+      <p class="muted">Davao del Norte State College, Davao del Norte, Philippines</p>
+      <ul class="chips">
+        <li>Information Management Systems</li>
+        <li>Computer Applications</li>
+        <li>Cloud Fundamentals (Microsoft Azure)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="sec">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="skill-cols">
+      <div class="reveal">
+        <h3>Azure and cloud</h3>
+        <div class="bar-skill" data-v="85"><span>Virtual machines</span><i></i></div>
+        <div class="bar-skill" data-v="85"><span>Virtual networks and subnets</span><i></i></div>
+        <div class="bar-skill" data-v="80"><span>Entra ID and RBAC</span><i></i></div>
+        <div class="bar-skill" data-v="80"><span>Storage accounts and Azure Files</span><i></i></div>
+        <div class="bar-skill" data-v="80"><span>Network security groups</span><i></i></div>
+        <div class="bar-skill" data-v="75"><span>Azure Policy, tags, resource groups</span><i></i></div>
+      </div>
+      <div class="reveal">
+        <h3>IT and productivity</h3>
+        <ul class="chips">
+          <li>Data entry and validation</li><li>Documentation</li><li>File management</li>
+          <li>Microsoft Word, Excel, PowerPoint</li><li>Google Docs, Sheets, Forms</li>
+          <li>45 WPM at 98% accuracy</li>
+        </ul>
+        <h3>Professional</h3>
+        <ul class="chips">
+          <li>Attention to detail</li><li>Time management</li><li>Meeting deadlines</li>
+          <li>Adaptability</li><li>Independent work</li><li>Clear communication</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="sec alt">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <p class="muted">Hands-on labs completed in an Azure student subscription. Repository links are coming soon.</p>
+    <div class="filters" id="filters">
+      <button class="on" data-f="all">All</button><button data-f="compute">Compute</button>
+      <button data-f="network">Network</button><button data-f="identity">Identity</button>
+    </div>
+    <div class="cards" id="cards">
+      <article class="card" data-c="compute" tabindex="0">
+        <h3>Virtual machine deployment</h3>
+        <p>Deployed and troubleshot Azure virtual machines inside resource groups.</p>
+        <p class="more">Applied resource tags and Azure Policy to keep the environment organized and compliant.</p>
+        <ul class="chips"><li>Azure VMs</li><li>Azure Policy</li><li>Tags</li></ul>
+      </article>
+      <article class="card" data-c="network" tabindex="0">
+        <h3>Secure virtual network</h3>
+        <p>Built virtual networks and subnets and restricted traffic with network security groups.</p>
+        <p class="more">Tested inbound and outbound rules and fixed connectivity problems.</p>
+        <ul class="chips"><li>VNet</li><li>Subnets</li><li>NSG</li></ul>
+      </article>
+      <article class="card" data-c="identity" tabindex="0">
+        <h3>Access control with Entra ID</h3>
+        <p>Managed users and assigned roles with Microsoft Entra ID and RBAC.</p>
+        <p class="more">Applied least-privilege role assignments at resource group scope.</p>
+        <ul class="chips"><li>Entra ID</li><li>RBAC</li></ul>
+      </article>
+      <article class="card" data-c="compute" tabindex="0">
+        <h3>Storage and file shares</h3>
+        <p>Configured storage accounts and Azure Files shares.</p>
+        <p class="more">Documented the setup steps so another admin can repeat them.</p>
+        <ul class="chips"><li>Storage accounts</li><li>Azure Files</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="certs" class="sec">
+  <div class="wrap">
+    <h2>Certifications</h2>
+    <div class="certs">
+      <div class="cert reveal"><h3>Microsoft Certified: Azure Administrator Associate</h3><p>AZ-104 · passed September 2026</p></div>
+      <div class="cert reveal"><h3>Microsoft Certified: Azure Fundamentals</h3><p>AZ-900</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="sec alt">
+  <div class="wrap">
+    <h2>Experience</h2>
+    <p class="reveal">I'm building my experience through academic and technical projects: Azure labs on a student subscription, plus database and office-productivity coursework. I'm open to internships, OJT and entry-level roles.</p>
+  </div>
+</section>
+
+<section id="contact" class="sec">
+  <div class="wrap">
+    <h2>Let's connect</h2>
+    <p>Available for full-time, work-from-home roles. Open to pre-employment assessments and online skills evaluations.</p>
+    <div class="actions">
+      <a class="btn primary" href="mailto:jqtalento04@gmail.com">Email me</a>
+      <a class="btn" href="https://github.com/YOUR-GITHUB" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://facebook.com/YOUR-FACEBOOK" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><p>© 2026 Jamalee Qym Talento</p></footer>
+<script src="js/main.js"></script>
+</body>
+</html>

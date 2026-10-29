@@ -135,3 +135,45 @@ footer{background:#000;color:#8a8a8a;text-align:center;padding:30px;font-size:.9
 }
 @media(max-width:520px){.facts{grid-template-columns:1fr}body{font-size:16px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal,.hero .in-up{opacity:1;transform:none}.hero h1 .ch{transform:none}h2{clip-path:none}h2::after{width:64px}#loader{display:none}}
+/* effects + lab case studies */
+body{counter-reset:sec}
+.sec{overflow:hidden}.sec .wrap{position:relative;z-index:1}
+.sec h2{counter-increment:sec}
+.sec h2::before{content:"0" counter(sec) " /";display:block;font-size:.85rem;letter-spacing:.1em;color:var(--amber);margin-bottom:10px;font-weight:600}
+.ghost{position:absolute;right:-1%;top:30px;font-size:clamp(5rem,17vw,14rem);font-weight:800;color:transparent;-webkit-text-stroke:1px var(--ln);pointer-events:none;white-space:nowrap;z-index:0;letter-spacing:-.05em;will-change:transform}
+.stat-grid.three{grid-template-columns:repeat(3,1fr)}
+.term{transform:perspective(900px) rotateX(var(--tx,0deg)) rotateY(var(--ty,-6deg));transition:transform .25s}
+.term:hover{transform:perspective(900px) rotateX(var(--tx,0deg)) rotateY(var(--ty,0deg))}
+.hero h1{transform:translate3d(var(--hx,0),var(--hy,0),0);transition:transform .3s}
+.card{animation:rise .9s var(--ease) backwards paused;animation-delay:calc(var(--k,0)*120ms);display:flex;flex-direction:column;min-height:340px}
+.cards.in .card{animation-play-state:running}
+@keyframes rise{from{opacity:0;transform:translateY(46px) scale(.96)}}
+.card .ico{width:52px;height:52px;color:var(--fg);margin-bottom:18px;transition:color .3s,transform .5s var(--ease)}
+.card:hover .ico{color:var(--amber);transform:scale(1.12) rotate(-4deg)}
+.ico *{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.8s var(--ease);transition-delay:calc(var(--k,0)*120ms + .3s)}
+.cards.in .ico *{stroke-dashoffset:0}
+.tag{font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin-bottom:8px}
+.card .chips{margin:14px 0 18px}
+.go{margin-top:auto;font-weight:600;position:relative;width:fit-content}
+.go::after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:2px;background:var(--amber);transform:scaleX(.2);transform-origin:left;transition:transform .4s var(--ease)}
+.card:hover .go::after{transform:scaleX(1)}
+dialog#lab{border:0;padding:0;margin:auto;width:min(760px,92vw);max-height:88vh;background:#0a0a0a;color:#fafafa;border-radius:var(--r);border-top:5px solid var(--amber);overflow:auto;--mut:#a0a0a0;--ln:#2b2b2b;--card:#141414}
+dialog#lab[open]{animation:dlg .55s var(--ease)}
+dialog#lab::backdrop{background:#000b;backdrop-filter:blur(8px)}
+@keyframes dlg{from{opacity:0;transform:translateY(40px) scale(.96)}}
+#labBody{padding:40px}
+#labBody h3{font-size:clamp(2rem,5vw,3rem);margin-bottom:6px}
+#labBody .kick{color:var(--amber);font-weight:600;margin:0 0 24px}
+#labBody h4{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);margin:26px 0 10px}
+#labBody ol{padding-left:22px}#labBody li{margin-top:8px}
+#labBody .chips li{background:var(--card)}
+#labBody>*{animation:rise .6s var(--ease) backwards}
+#labBody>*:nth-child(n){animation-delay:calc(var(--n,0)*60ms + .15s)}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.tiles div{border:1px solid var(--ln);padding:18px;border-radius:var(--r);background:var(--card)}
+.tiles b{display:block;font-size:2rem;font-weight:800;letter-spacing:-.04em;color:var(--amber);line-height:1.1}
+.tiles span{font-size:.82rem;color:var(--mut)}
+.x{position:absolute;top:10px;right:14px;z-index:2;background:none;border:0;color:#fff;font-size:2.2rem;line-height:1;width:44px;height:44px;cursor:pointer;transition:transform .35s var(--ease),color .2s}
+.x:hover{transform:rotate(90deg);color:var(--amber)}
+@media(max-width:860px){.term{transform:none!important}.tiles{grid-template-columns:1fr}.stat-grid.three{grid-template-columns:1fr 1fr}#labBody{padding:28px 22px}.ghost{display:none}}
+@media(prefers-reduced-motion:reduce){.ico *{stroke-dashoffset:0}.card{animation:none}}

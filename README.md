@@ -11,7 +11,7 @@ A responsive, animated personal CV website for **Jamalee Qym Talento**, an Infor
 Jamalee Qym Talento — BSIT, Davao del Norte State College
 
 ## Live Vercel Link
-https://YOUR-PROJECT.vercel.app  <!-- replace after deploying -->
+https://cv-repo-xi.vercel.app/
 
 ## GitHub Repository
 https://github.com/talentojamaleeqym-eng/cv-repo

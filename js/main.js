@@ -62,8 +62,6 @@
     cards.forEach(function(c){var hide=b.dataset.f!=='all'&&c.dataset.c!==b.dataset.f;c.classList.toggle('hide',hide);if(!hide){c.style.animation='none';void c.offsetWidth;c.style.animation=''}});
   });
   cards.forEach(function(c){
-    c.addEventListener('click',function(){c.classList.toggle('open')});
-    c.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();c.classList.toggle('open')}});
     if(reduce||touch)return;
     c.addEventListener('mousemove',function(e){var r=c.getBoundingClientRect();
       c.style.setProperty('--ry',((e.clientX-r.left)/r.width-.5)*10+'deg');c.style.setProperty('--rx',(.5-(e.clientY-r.top)/r.height)*10+'deg')});

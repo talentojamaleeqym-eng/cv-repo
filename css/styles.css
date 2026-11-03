@@ -80,7 +80,7 @@ body.ready .hero .in-up{opacity:1;transform:none}
 .two{display:grid;grid-template-columns:300px 1fr;gap:64px;align-items:start}
 .photo{position:relative;aspect-ratio:4/5;background:#111;box-shadow:14px 14px 0 var(--amber);transition:box-shadow .4s var(--ease),transform .4s var(--ease);margin:0 14px 14px 0}
 .photo:hover{box-shadow:6px 6px 0 var(--amber);transform:translate(8px,8px)}
-.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;filter:grayscale(1);transition:filter .5s}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;z-index:1;filter:grayscale(1);transition:filter .5s}
 .photo:hover img{filter:none}
 .initials{position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-weight:800;font-size:4.5rem;letter-spacing:-.05em}
 .facts{display:grid;grid-template-columns:1fr 1fr;gap:0 32px;margin-top:32px}

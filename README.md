@@ -23,3 +23,11 @@ css/styles.css  design system, layout, animations
 js/main.js      nav, scroll reveal, skill bars, terminal, project filter
 assets/         profile.jpg goes here
 ```
+
+## Motion Design
+Animation follows a small set of research-backed rules:
+- **Fast and purposeful:** UI motion stays in the 100-500 ms range; hover feedback is about 180 ms.
+- **One thing moves at a time:** the hero plays an ordered sequence (name, role, intro, actions, terminal), then everything else reveals on scroll with a short stagger.
+- **No blocking intro:** the page is fully painted on the first frame, because visitors judge a site's appearance within about 50 ms.
+- **Progress cues:** a scroll progress bar and side section rail show how far through the page you are.
+- **Accessible:** no parallax or large scroll-driven motion, and everything turns off under the OS "reduce motion" setting (WCAG 2.3.3).

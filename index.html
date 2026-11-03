@@ -12,8 +12,7 @@
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<div id="loader" aria-hidden="true"><b id="pct">0</b><span></span></div>
-<div id="prog"></div><div class="cur" id="cur"></div><div class="cur dot" id="dot"></div>
+<div id="prog"></div>
 
 <header class="nav" id="nav">
   <a href="#home" class="brand">JQT</a>
@@ -28,12 +27,11 @@
 <section class="hero dark" id="home">
   <div class="wrap hero-grid">
     <div>
-      <p class="status"><span class="dot"></span>Open to OJT and entry-level roles</p>
       <h1 id="name" aria-label="Jamalee Qym Talento">Jamalee Qym Talento</h1>
       <p class="title">Information Technology Student &amp; Azure Administrator Associate</p>
       <p class="lead">I deploy, secure and troubleshoot cloud resources, and I keep the records behind them accurate. I'm looking for an OJT placement or entry-level Azure Administrator, Cloud Support or IT Support role.</p>
       <div class="actions">
-        <a class="btn primary" href="#projects">View my labs</a>
+        <a class="btn primary" id="heroCta" href="#projects">View my labs</a>
         <a class="btn" href="Resume.pdf" download>Download resume</a>
       </div>
     </div>
@@ -45,12 +43,12 @@
 </section>
 
 <section class="stats dark" aria-label="Highlights">
-  <div class="wrap stat-grid three">
+  <div class="wrap stat-grid" data-stagger>
     <div class="stat"><b data-n="2">0</b><span>Microsoft certifications</span></div>
     <div class="stat"><b data-n="5">0</b><span>AZ-104 domains practiced</span></div>
     <div class="stat"><b data-n="1">0</b><span>Lab web app monitored</span></div>
   </div>
-  <div class="marq" aria-hidden="true"><div><span>Virtual machines</span><span>Virtual networks</span><span>Entra ID</span><span>RBAC</span><span>Storage accounts</span><span>Azure Files</span><span>NSGs</span><span>Azure Policy</span><span>Azure analytics</span><span>Workbook automation</span><span>PowerShell</span><span>Bash</span><span>Hyper-V</span><span>Windows Server 2016</span><span>Windows Server 2025</span><span>Virtual machines</span><span>Virtual networks</span><span>Entra ID</span><span>RBAC</span><span>Storage accounts</span><span>Azure Files</span><span>NSGs</span><span>Azure Policy</span><span>Azure analytics</span><span>Workbook automation</span><span>PowerShell</span><span>Bash</span><span>Hyper-V</span><span>Windows Server 2016</span><span>Windows Server 2025</span></div></div>
+  <ul class="strip" data-stagger aria-label="Skills"><li>Virtual machines</li><li>Virtual networks</li><li>Entra ID</li><li>RBAC</li><li>Storage accounts</li><li>Azure Files</li><li>NSGs</li><li>Azure Policy</li><li>Azure analytics</li><li>Workbook automation</li><li>PowerShell</li><li>Bash</li><li>Hyper-V</li><li>Windows Server 2016</li><li>Windows Server 2025</li></ul>
 </section>
 
 <section id="about" class="sec">
@@ -184,7 +182,7 @@
 <section id="certs" class="sec dark">
   <div class="wrap">
     <h2>Certifications</h2>
-    <div class="certs">
+    <div class="certs" data-stagger>
       <div class="cert reveal"><h3>Microsoft Certified: Azure Administrator Associate</h3><p>AZ-104 · passed September 2026</p></div>
       <div class="cert reveal"><h3>Microsoft Certified: Azure Fundamentals</h3><p>AZ-900</p></div>
     </div>
@@ -211,7 +209,7 @@
     <h2>Let's connect</h2>
     <p>Open to on-site, hybrid, or remote OJT and entry-level placements. Available for pre-employment assessments and online skills evaluations.</p>
     <div class="actions">
-      <a class="btn primary" href="mailto:jqtalento04@gmail.com">Email me</a>
+      <a class="btn primary" id="endCta" href="mailto:jqtalento04@gmail.com">Email me</a>
       <a class="btn" href="https://github.com/talentojamaleeqym-eng" target="_blank" rel="noopener">GitHub</a>
       <a class="btn" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
       <a class="btn" href="https://facebook.com/YOUR-FACEBOOK" target="_blank" rel="noopener">Facebook</a>
@@ -224,6 +222,5 @@
 
 <footer><p>© 2026 Jamalee Qym Talento</p></footer>
 <script src="js/main.js"></script>
-<script src="js/effects.js"></script>
 </body>
 </html>

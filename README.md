@@ -21,7 +21,7 @@ https://github.com/talentojamaleeqym-eng/cv-repo
 index.html      page content
 css/styles.css  design system, layout, animations
 js/main.js      nav, scroll reveal, skill bars, terminal, project filter
-assets/         profile.jpg goes here
+assets/         profile.webp, avatar.webp and Azure service icons
 ```
 
 ## Motion Design

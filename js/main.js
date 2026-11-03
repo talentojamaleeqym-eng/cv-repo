@@ -10,7 +10,7 @@
     w.split('').forEach(function(c){var s=document.createElement('span');s.className='ch';s.textContent=c;s.style.setProperty('--i',i++);ws.appendChild(s)});
     h1.appendChild(ws);
   });
-  ['.eyebrow','.title','.lead','.badges','.actions','.term'].forEach(function(s,k){var e=$(s,$('.hero'));if(e){e.classList.add('in-up');e.style.setProperty('--k',k===0?-3:k-1)}});
+  ['.eyebrow-row','.title','.lead','.badges','.actions','.term'].forEach(function(s,k){var e=$(s,$('.hero'));if(e){e.classList.add('in-up');e.style.setProperty('--k',k===0?-3:k-1)}});
   requestAnimationFrame(function(){requestAnimationFrame(function(){body.classList.add('ready')})});
   if(!reduce)setTimeout(function(){$('#heroCta').classList.add('pulse-once')},1500);
 

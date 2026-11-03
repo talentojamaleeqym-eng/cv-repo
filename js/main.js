@@ -92,13 +92,13 @@
     ['cmd','$ az vm create -g rg-cv -n vm-lab01'],['ok','✔ Running'],
     ['cmd','$ az role assignment create --role Reader'],['ok','✔ Access granted'],
     ['cmd','$ whoami'],['','Jamalee, AZ-104 certified']];
-  if(reduce){term.innerHTML=lines.map(function(l){return '<span class="'+l[0]+'">'+l[1]+'</span>'}).join('\n');return}
+  if(reduce){term.innerHTML=lines.map(function(l){return '<span class="'+l[0]+'">'+l[1]+'</span>'}).join('\n');term.scrollTop=term.scrollHeight;return}
   var li=0,ci=0,html='';
   function type(){
     if(li>=lines.length)return;
     var l=lines[li],c=l[0]==='cmd';
-    if(c){ci++;term.innerHTML=html+'<span class="cmd">'+l[1].slice(0,ci)+'</span>▌';if(ci<l[1].length)return setTimeout(type,24)}
-    html+='<span class="'+l[0]+'">'+l[1]+'</span>\n';term.innerHTML=html;li++;ci=0;setTimeout(type,c?300:450);
+    if(c){ci++;term.innerHTML=html+'<span class="cmd">'+l[1].slice(0,ci)+'</span>▌';term.scrollTop=term.scrollHeight;if(ci<l[1].length)return setTimeout(type,24)}
+    html+='<span class="'+l[0]+'">'+l[1]+'</span>\n';term.innerHTML=html;term.scrollTop=term.scrollHeight;li++;ci=0;setTimeout(type,c?300:450);
   }
   setTimeout(type,1300);
 })();

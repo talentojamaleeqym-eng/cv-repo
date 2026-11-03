@@ -67,7 +67,7 @@ body.ready .hero .in-up{opacity:1;transform:none}
 .term .bar{display:flex;gap:7px;align-items:center;padding:12px 14px;border-bottom:1px solid #ffffff1f}
 .term .bar i{width:10px;height:10px;border-radius:50%;background:#ffffff40}
 .term .bar b{margin-left:8px;font-weight:500;font-size:.78rem;color:#999}
-.term pre{font:.86rem/1.75 ui-monospace,Menlo,Consolas,monospace;padding:18px;min-height:190px;white-space:pre-wrap;color:#e6e6e6}
+.term pre{font:.86rem/1.75 ui-monospace,Menlo,Consolas,monospace;padding:18px;height:132px;overflow:hidden;white-space:pre-wrap;color:#e6e6e6}
 .term .ok{color:var(--amber)}.term .cmd{color:#fff}
 .stats{padding-top:56px;border-top:1px solid #ffffff1a}
 .stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding-bottom:40px}
@@ -151,11 +151,11 @@ footer{background:#000;color:#8a8a8a;text-align:center;padding:30px;font-size:.9
 .badges li:hover{background:var(--amber);color:#000}
 .hl{background:linear-gradient(var(--amber),var(--amber)) 0 100%/0 3px no-repeat;color:inherit;padding-bottom:3px;transition:background-size 700ms var(--out) 1.3s}
 body.ready .hl{background-size:100% 3px}
-.hero-visual{position:relative;padding-bottom:72px}
-.hero .photo{max-width:340px;margin-left:auto}
+.hero-visual{position:relative;padding-bottom:36px}
+.hero .photo{max-width:380px;margin-left:auto}
 .photo img{clip-path:inset(0 0 100% 0);transition:clip-path 700ms var(--out) 250ms,filter var(--t-med)}
 body.ready .photo img{clip-path:inset(0)}
-.hero .term{position:absolute;left:-6%;bottom:0;width:84%;box-shadow:0 24px 60px #000a}
+.hero .term{position:absolute;left:-16%;bottom:-6px;width:66%;box-shadow:0 24px 60px #000a}
 .about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:start}
 .hw{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.1em;margin-right:.2em}
 .hw>span{display:inline-block;transform:translateY(105%);transition:transform var(--t-med) var(--out);transition-delay:calc(var(--i)*60ms)}
@@ -169,7 +169,7 @@ h2.in .hw>span{transform:none}
 @media(max-width:860px){
  .hero-grid,.about-grid,.skill-cols{grid-template-columns:1fr;gap:40px}
  .stat-grid{grid-template-columns:1fr 1fr}
- .hero .photo{max-width:260px;margin:0}.hero-visual{padding-bottom:0}.hero .term{position:relative;left:auto;width:100%;margin-top:-36px}.tiles{grid-template-columns:1fr}
+ .hero .photo{max-width:260px;margin:0}.hero-visual{padding-bottom:0}.hero .term{position:relative;left:auto;width:100%;margin-top:16px}.tiles{grid-template-columns:1fr}
  .burger{display:block}
  nav{position:fixed;top:64px;left:16px;right:16px;flex-direction:column;background:#0a0a0a;border:1px solid #333;border-radius:var(--r);padding:12px;opacity:0;visibility:hidden;transform:translateY(-10px);transition:opacity var(--t-fast),transform var(--t-fast),visibility var(--t-fast)}
  nav.open{opacity:1;visibility:visible;transform:none}

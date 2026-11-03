@@ -18,27 +18,35 @@
   <a href="#home" class="brand">JQT</a>
   <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><i></i><i></i></button>
   <nav id="menu">
-    <a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a>
-    <a href="#projects">Projects</a><a href="#certs">Certifications</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    <a href="#about">About</a><a href="#certs">Certifications</a><a href="#projects">Labs</a>
+    <a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a>
   </nav>
 </header>
 
 <main>
 <section class="hero dark" id="home">
   <div class="wrap hero-grid">
-    <div>
+    <div class="hero-copy">
+      <p class="eyebrow">Fourth-year BSIT · Davao del Norte State College</p>
       <h1 id="name" aria-label="Jamalee Qym Talento">Jamalee Qym Talento</h1>
       <p class="title">Information Technology Student &amp; Azure Administrator Associate</p>
-      <p class="lead">I deploy, secure and troubleshoot cloud resources, and I keep the records behind them accurate. I'm looking for an OJT placement or entry-level Azure Administrator, Cloud Support or IT Support role.</p>
+      <p class="lead">I <mark class="hl">deploy, secure and troubleshoot cloud resources</mark>, and I keep the records behind them accurate.</p>
+      <ul class="badges"><li>Azure Administrator Associate · AZ-104</li><li>Azure Fundamentals · AZ-900</li></ul>
       <div class="actions">
         <a class="btn primary" id="heroCta" href="#projects">View my labs</a>
         <a class="btn" href="Resume.pdf" download>Download resume</a>
       </div>
     </div>
-    <aside class="term" aria-label="Azure CLI demo">
-      <div class="bar"><i></i><i></i><i></i><b>azure cloud shell</b></div>
-      <pre id="term" aria-live="off"></pre>
-    </aside>
+    <div class="hero-visual">
+      <figure class="photo">
+        <img src="assets/profile.jpg" alt="Portrait of Jamalee Qym Talento" onerror="this.remove()">
+        <span class="initials">JQT</span>
+      </figure>
+      <aside class="term" aria-label="Azure CLI demo">
+        <div class="bar"><i></i><i></i><i></i><b>azure cloud shell</b></div>
+        <pre id="term" aria-live="off"></pre>
+      </aside>
+    </div>
   </div>
 </section>
 
@@ -51,78 +59,35 @@
   <ul class="strip" data-stagger aria-label="Skills"><li>Virtual machines</li><li>Virtual networks</li><li>Entra ID</li><li>RBAC</li><li>Storage accounts</li><li>Azure Files</li><li>NSGs</li><li>Azure Policy</li><li>Azure analytics</li><li>Workbook automation</li><li>PowerShell</li><li>Bash</li><li>Hyper-V</li><li>Windows Server 2016</li><li>Windows Server 2025</li></ul>
 </section>
 
+
 <section id="about" class="sec">
-  <div class="wrap two">
-    <figure class="photo">
-      <img src="assets/profile.jpg" alt="Portrait of Jamalee Qym Talento" onerror="this.remove()">
-      <span class="initials">JQT</span>
-    </figure>
+  <div class="wrap about-grid">
     <div>
       <h2>About me</h2>
       <p>I'm a fourth-year Bachelor of Science in Information Technology student (expected graduation June–July 2027) with hands-on Azure practice from student-subscription labs. I pay close attention to detail, document what I build, and learn new systems quickly.</p>
       <p><strong>Career objective:</strong> to complete my OJT and start my career as an Azure Administrator, Cloud Support or IT Support specialist and grow into cloud infrastructure and security.</p>
-      <dl class="facts">
-        <div><dt>Location</dt><dd>Davao del Norte, Philippines</dd></div>
-        <div><dt>Email</dt><dd><a href="mailto:jqtalento04@gmail.com">jqtalento04@gmail.com</a></dd></div>
-        <div><dt>Interests</dt><dd>Cloud administration, network security, identity and access</dd></div>
-        <div><dt>Languages</dt><dd>English and Filipino (Tagalog), fluent</dd></div>
-      </dl>
     </div>
+    <dl class="facts reveal">
+      <div><dt>Location</dt><dd>Davao del Norte, Philippines</dd></div>
+      <div><dt>Email</dt><dd><a href="mailto:jqtalento04@gmail.com">jqtalento04@gmail.com</a></dd></div>
+      <div><dt>Interests</dt><dd>Cloud administration, network security, identity and access</dd></div>
+      <div><dt>Languages</dt><dd>English and Filipino (Tagalog), fluent</dd></div>
+    </dl>
   </div>
 </section>
 
-<section id="education" class="sec alt">
+<section id="certs" class="sec dark">
   <div class="wrap">
-    <h2>Education</h2>
-    <div class="edu reveal">
-      <h3>Bachelor of Science in Information Technology</h3>
-      <p class="muted">Davao del Norte State College, Davao del Norte, Philippines</p>
-      <p><strong>Fourth year</strong> · Expected graduation: June–July 2027</p>
-      <ul class="chips">
-        <li>Information Management Systems</li>
-        <li>Computer Applications</li>
-        <li>Cloud Fundamentals (Microsoft Azure)</li>
-      </ul>
+    <h2>Certifications</h2>
+    <div class="certs" data-stagger>
+      <div class="cert reveal"><h3>Microsoft Certified: Azure Administrator Associate</h3><p>AZ-104 · passed September 2026</p></div>
+      <div class="cert reveal"><h3>Microsoft Certified: Azure Fundamentals</h3><p>AZ-900</p></div>
     </div>
   </div>
 </section>
 
-<section id="skills" class="sec dark">
-  <div class="wrap">
-    <h2>Skills</h2>
-    <div class="skill-cols">
-      <div class="reveal">
-        <h3>Azure and cloud</h3>
-        <div class="bar-skill" data-v="85"><span>Virtual machines</span><i></i></div>
-        <div class="bar-skill" data-v="85"><span>Virtual networks and subnets</span><i></i></div>
-        <div class="bar-skill" data-v="80"><span>Entra ID and RBAC</span><i></i></div>
-        <div class="bar-skill" data-v="80"><span>Storage accounts and Azure Files</span><i></i></div>
-        <div class="bar-skill" data-v="80"><span>Network security groups</span><i></i></div>
-        <div class="bar-skill" data-v="75"><span>Azure Policy, tags, resource groups</span><i></i></div>
-      </div>
-      <div class="reveal">
-        <h3>Scripting and systems</h3>
-        <ul class="chips">
-          <li>PowerShell scripting</li><li>Bash</li><li>Hyper-V virtualization</li>
-          <li>Windows Server 2016</li><li>Windows Server 2025</li>
-        </ul>
-        <h3>IT and productivity</h3>
-        <ul class="chips">
-          <li>Data entry and validation</li><li>Documentation</li><li>File management</li>
-          <li>Microsoft Word, Excel, PowerPoint</li><li>Google Docs, Sheets, Forms</li>
-          <li>45 WPM at 98% accuracy</li>
-        </ul>
-        <h3>Professional</h3>
-        <ul class="chips">
-          <li>Attention to detail</li><li>Time management</li><li>Meeting deadlines</li>
-          <li>Adaptability</li><li>Independent work</li><li>Clear communication</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section id="projects" class="sec">
+<section id="projects" class="sec alt">
   <div class="wrap">
     <h2>Projects</h2>
     <p class="muted">Hands-on Azure labs from a student subscription, organized by the five AZ-104 exam domains. Click a card for the full case study.</p>
@@ -179,17 +144,44 @@
   </div>
 </section>
 
-<section id="certs" class="sec dark">
+
+<section id="skills" class="sec dark">
   <div class="wrap">
-    <h2>Certifications</h2>
-    <div class="certs" data-stagger>
-      <div class="cert reveal"><h3>Microsoft Certified: Azure Administrator Associate</h3><p>AZ-104 · passed September 2026</p></div>
-      <div class="cert reveal"><h3>Microsoft Certified: Azure Fundamentals</h3><p>AZ-900</p></div>
+    <h2>Skills</h2>
+    <div class="skill-cols">
+      <div class="reveal">
+        <h3>Azure and cloud</h3>
+        <div class="bar-skill" data-v="85"><span>Virtual machines</span><i></i></div>
+        <div class="bar-skill" data-v="85"><span>Virtual networks and subnets</span><i></i></div>
+        <div class="bar-skill" data-v="80"><span>Entra ID and RBAC</span><i></i></div>
+        <div class="bar-skill" data-v="80"><span>Storage accounts and Azure Files</span><i></i></div>
+        <div class="bar-skill" data-v="80"><span>Network security groups</span><i></i></div>
+        <div class="bar-skill" data-v="75"><span>Azure Policy, tags, resource groups</span><i></i></div>
+      </div>
+      <div class="reveal">
+        <h3>Scripting and systems</h3>
+        <ul class="chips">
+          <li>PowerShell scripting</li><li>Bash</li><li>Hyper-V virtualization</li>
+          <li>Windows Server 2016</li><li>Windows Server 2025</li>
+        </ul>
+        <h3>IT and productivity</h3>
+        <ul class="chips">
+          <li>Data entry and validation</li><li>Documentation</li><li>File management</li>
+          <li>Microsoft Word, Excel, PowerPoint</li><li>Google Docs, Sheets, Forms</li>
+          <li>45 WPM at 98% accuracy</li>
+        </ul>
+        <h3>Professional</h3>
+        <ul class="chips">
+          <li>Attention to detail</li><li>Time management</li><li>Meeting deadlines</li>
+          <li>Adaptability</li><li>Independent work</li><li>Clear communication</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="experience" class="sec alt">
+
+<section id="experience" class="sec">
   <div class="wrap">
     <h2>Experience</h2>
     <article class="job reveal">
@@ -204,15 +196,33 @@
   </div>
 </section>
 
+
+<section id="education" class="sec alt">
+  <div class="wrap">
+    <h2>Education</h2>
+    <div class="edu reveal">
+      <h3>Bachelor of Science in Information Technology</h3>
+      <p class="muted">Davao del Norte State College, Davao del Norte, Philippines</p>
+      <p><strong>Fourth year</strong> · Expected graduation: June–July 2027</p>
+      <ul class="chips">
+        <li>Information Management Systems</li>
+        <li>Computer Applications</li>
+        <li>Cloud Fundamentals (Microsoft Azure)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
 <section id="contact" class="sec dark">
   <div class="wrap">
     <h2>Let's connect</h2>
+    <a class="mail reveal" href="mailto:jqtalento04@gmail.com">jqtalento04@gmail.com</a>
     <p>Open to on-site, hybrid, or remote OJT and entry-level placements. Available for pre-employment assessments and online skills evaluations.</p>
     <div class="actions">
       <a class="btn primary" id="endCta" href="mailto:jqtalento04@gmail.com">Email me</a>
       <a class="btn" href="https://github.com/talentojamaleeqym-eng" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn" href="https://facebook.com/YOUR-FACEBOOK" target="_blank" rel="noopener">Facebook</a>
+      <a class="btn" href="Resume.pdf" download>Download resume</a>
     </div>
   </div>
 </section>

@@ -10,7 +10,7 @@
     w.split('').forEach(function(c){var s=document.createElement('span');s.className='ch';s.textContent=c;s.style.setProperty('--i',i++);ws.appendChild(s)});
     h1.appendChild(ws);
   });
-  ['.title','.lead','.actions','.term'].forEach(function(s,k){var e=$(s,$('.hero'));if(e){e.classList.add('in-up');e.style.setProperty('--k',k)}});
+  ['.eyebrow','.title','.lead','.badges','.actions','.term'].forEach(function(s,k){var e=$(s,$('.hero'));if(e){e.classList.add('in-up');e.style.setProperty('--k',k===0?-3:k-1)}});
   requestAnimationFrame(function(){requestAnimationFrame(function(){body.classList.add('ready')})});
   if(!reduce)setTimeout(function(){$('#heroCta').classList.add('pulse-once')},1500);
 
@@ -37,7 +37,7 @@
 
   // 3. Scroll reveals: one shared motion (small upward fade), staggered, fired once
   $$('[data-stagger]').forEach(function(c){[].forEach.call(c.children,function(el,k){el.classList.add('reveal');el.style.setProperty('--i',k)})});
-  $$('h2').forEach(function(h){h.classList.add('reveal')});
+  $$('h2').forEach(function(h){var t=h.textContent.trim();h.setAttribute('aria-label',t);h.innerHTML=t.split(' ').map(function(w,k){return '<span class="hw" aria-hidden="true"><span style="--i:'+k+'">'+w+'</span></span>'}).join(' ')});
   $$('.bar-skill').forEach(function(b){b.querySelector('i').style.setProperty('--w',b.dataset.v+'%');var em=document.createElement('em');em.textContent='0%';b.querySelector('span').appendChild(em)});
   function count(el,to,suf){
     if(reduce){el.textContent=to+suf;return}
@@ -49,10 +49,24 @@
     $$('.bar-skill',el).forEach(function(b,k){setTimeout(function(){b.classList.add('in');count(b.querySelector('em'),+b.dataset.v,'%')},k*90)});
   }
   var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){io.unobserve(en.target);reveal(en.target)}})},{threshold:.2,rootMargin:'0px 0px -6% 0px'});
-  var targets=$$('.reveal,[data-n],#cards');
+  var targets=$$('.reveal,[data-n],#cards,h2');
   targets.forEach(function(e){reduce?reveal(e):io.observe(e)});
   // end of page: the closing call to action pulses once when it comes into view
   new IntersectionObserver(function(es,o){es.forEach(function(en){if(en.isIntersecting&&!reduce){en.target.classList.add('pulse-once');o.disconnect()}})},{threshold:1}).observe($('#endCta'));
+
+  // light-only effects that follow the pointer (no layout movement): card spotlight, hero glow, gentle button pull
+  if(!reduce&&matchMedia('(pointer:fine)').matches){
+    addEventListener('pointermove',function(e){
+      var t=e.target.closest&&e.target.closest('.card,.cert,.facts,.job,.edu');
+      if(t){var r=t.getBoundingClientRect();t.style.setProperty('--mx',e.clientX-r.left+'px');t.style.setProperty('--my',e.clientY-r.top+'px')}
+      var h=$('.hero'),hr=h.getBoundingClientRect();
+      if(e.clientY<hr.bottom){h.style.setProperty('--mx',e.clientX-hr.left+'px');h.style.setProperty('--my',e.clientY-hr.top+'px')}
+    },{passive:true});
+    $$('.btn').forEach(function(b){
+      b.addEventListener('pointermove',function(e){var r=b.getBoundingClientRect();b.style.translate=((e.clientX-r.left-r.width/2)*.12)+'px '+((e.clientY-r.top-r.height/2)*.2)+'px'});
+      b.addEventListener('pointerleave',function(){b.style.translate=''});
+    });
+  }
 
   // 4. Project filter and lab case-study dialog
   var cards=$$('.card');
